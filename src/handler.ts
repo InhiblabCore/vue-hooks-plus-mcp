@@ -84,6 +84,8 @@ function getToolSchema(toolName: string): z.ZodType | undefined {
     switch (toolName) {
       case 'get_hook':
         return schemas.GetHookSchema;
+      case 'get_hook_demo':
+        return schemas.GetHookDemoSchema;
       default:
         return undefined;
     }
